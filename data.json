@@ -1,0 +1,1414 @@
+{
+  "latest_month": "2025-12-01",
+  "months": [
+    "2021-11-01",
+    "2021-12-01",
+    "2022-01-01",
+    "2022-02-01",
+    "2022-03-01",
+    "2022-04-01",
+    "2022-05-01",
+    "2022-06-01",
+    "2022-07-01",
+    "2022-08-01",
+    "2022-09-01",
+    "2022-10-01",
+    "2022-11-01",
+    "2022-12-01",
+    "2023-01-01",
+    "2023-02-01",
+    "2023-03-01",
+    "2023-04-01",
+    "2023-05-01",
+    "2023-06-01",
+    "2023-07-01",
+    "2023-08-01",
+    "2023-09-01",
+    "2023-10-01",
+    "2023-11-01",
+    "2023-12-01",
+    "2024-01-01",
+    "2024-02-01",
+    "2024-03-01",
+    "2024-04-01",
+    "2024-05-01",
+    "2024-06-01",
+    "2024-07-01",
+    "2024-08-01",
+    "2024-09-01",
+    "2024-10-01",
+    "2024-11-01",
+    "2024-12-01",
+    "2025-01-01",
+    "2025-02-01",
+    "2025-03-01",
+    "2025-04-01",
+    "2025-05-01",
+    "2025-06-01",
+    "2025-07-01",
+    "2025-08-01",
+    "2025-09-01",
+    "2025-10-01",
+    "2025-11-01",
+    "2025-12-01"
+  ],
+  "category_series": [
+    {
+      "category": "adnetwork",
+      "series": [
+        {
+          "month": "2021-11-01",
+          "value": 47023215
+        },
+        {
+          "month": "2021-12-01",
+          "value": 47611237
+        },
+        {
+          "month": "2022-01-01",
+          "value": 45078979
+        },
+        {
+          "month": "2022-02-01",
+          "value": 41245779
+        },
+        {
+          "month": "2022-03-01",
+          "value": 42182972
+        },
+        {
+          "month": "2022-04-01",
+          "value": 40059052
+        },
+        {
+          "month": "2022-05-01",
+          "value": 41414521
+        },
+        {
+          "month": "2022-06-01",
+          "value": 39901361
+        },
+        {
+          "month": "2022-07-01",
+          "value": 39589873
+        },
+        {
+          "month": "2022-08-01",
+          "value": 41981007
+        },
+        {
+          "month": "2022-09-01",
+          "value": 41707159
+        },
+        {
+          "month": "2022-10-01",
+          "value": 45123977
+        },
+        {
+          "month": "2022-11-01",
+          "value": 43765221
+        },
+        {
+          "month": "2022-12-01",
+          "value": 41894754
+        },
+        {
+          "month": "2023-01-01",
+          "value": 41496707
+        },
+        {
+          "month": "2023-02-01",
+          "value": 38736709
+        },
+        {
+          "month": "2023-03-01",
+          "value": 39852510
+        },
+        {
+          "month": "2023-04-01",
+          "value": 37946063
+        },
+        {
+          "month": "2023-05-01",
+          "value": 38233182
+        },
+        {
+          "month": "2023-06-01",
+          "value": 38774179
+        },
+        {
+          "month": "2023-07-01",
+          "value": 41364645
+        },
+        {
+          "month": "2023-08-01",
+          "value": 40698052
+        },
+        {
+          "month": "2023-09-01",
+          "value": 36457861
+        },
+        {
+          "month": "2023-10-01",
+          "value": 37319093
+        },
+        {
+          "month": "2023-11-01",
+          "value": 35945428
+        },
+        {
+          "month": "2023-12-01",
+          "value": 33655237
+        },
+        {
+          "month": "2024-01-01",
+          "value": 34115034
+        },
+        {
+          "month": "2024-02-01",
+          "value": 31914377
+        },
+        {
+          "month": "2024-03-01",
+          "value": 32949601
+        },
+        {
+          "month": "2024-04-01",
+          "value": 32276870
+        },
+        {
+          "month": "2024-05-01",
+          "value": 32315804
+        },
+        {
+          "month": "2024-06-01",
+          "value": 32916762
+        },
+        {
+          "month": "2024-07-01",
+          "value": 32183824
+        },
+        {
+          "month": "2024-08-01",
+          "value": 34921956
+        },
+        {
+          "month": "2024-09-01",
+          "value": 34523662
+        },
+        {
+          "month": "2024-10-01",
+          "value": 33366269
+        },
+        {
+          "month": "2024-11-01",
+          "value": 32010061
+        },
+        {
+          "month": "2024-12-01",
+          "value": 31591633
+        },
+        {
+          "month": "2025-01-01",
+          "value": 36823624
+        },
+        {
+          "month": "2025-02-01",
+          "value": 36369696
+        },
+        {
+          "month": "2025-03-01",
+          "value": 39603553
+        },
+        {
+          "month": "2025-04-01",
+          "value": 38813256
+        },
+        {
+          "month": "2025-05-01",
+          "value": 41801963
+        },
+        {
+          "month": "2025-06-01",
+          "value": 40733832
+        },
+        {
+          "month": "2025-07-01",
+          "value": 43836343
+        },
+        {
+          "month": "2025-08-01",
+          "value": 41735979
+        },
+        {
+          "month": "2025-09-01",
+          "value": 38536599
+        },
+        {
+          "month": "2025-10-01",
+          "value": 0
+        },
+        {
+          "month": "2025-11-01",
+          "value": 0
+        },
+        {
+          "month": "2025-12-01",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "category": "dach-marken",
+      "series": [
+        {
+          "month": "2021-11-01",
+          "value": 104473272
+        },
+        {
+          "month": "2021-12-01",
+          "value": 104859454
+        },
+        {
+          "month": "2022-01-01",
+          "value": 101920969
+        },
+        {
+          "month": "2022-02-01",
+          "value": 96374172
+        },
+        {
+          "month": "2022-03-01",
+          "value": 99688131
+        },
+        {
+          "month": "2022-04-01",
+          "value": 92176742
+        },
+        {
+          "month": "2022-05-01",
+          "value": 100046659
+        },
+        {
+          "month": "2022-06-01",
+          "value": 98087546
+        },
+        {
+          "month": "2022-07-01",
+          "value": 94563809
+        },
+        {
+          "month": "2022-08-01",
+          "value": 98584451
+        },
+        {
+          "month": "2022-09-01",
+          "value": 95344309
+        },
+        {
+          "month": "2022-10-01",
+          "value": 100688051
+        },
+        {
+          "month": "2022-11-01",
+          "value": 99246308
+        },
+        {
+          "month": "2022-12-01",
+          "value": 96890978
+        },
+        {
+          "month": "2023-01-01",
+          "value": 101201087
+        },
+        {
+          "month": "2023-02-01",
+          "value": 97948103
+        },
+        {
+          "month": "2023-03-01",
+          "value": 100154563
+        },
+        {
+          "month": "2023-04-01",
+          "value": 96049545
+        },
+        {
+          "month": "2023-05-01",
+          "value": 97128602
+        },
+        {
+          "month": "2023-06-01",
+          "value": 98019471
+        },
+        {
+          "month": "2023-07-01",
+          "value": 102462792
+        },
+        {
+          "month": "2023-08-01",
+          "value": 100827861
+        },
+        {
+          "month": "2023-09-01",
+          "value": 88511959
+        },
+        {
+          "month": "2023-10-01",
+          "value": 97714299
+        },
+        {
+          "month": "2023-11-01",
+          "value": 99193863
+        },
+        {
+          "month": "2023-12-01",
+          "value": 91209718
+        },
+        {
+          "month": "2024-01-01",
+          "value": 77803542
+        },
+        {
+          "month": "2024-02-01",
+          "value": 79032114
+        },
+        {
+          "month": "2024-03-01",
+          "value": 78786842
+        },
+        {
+          "month": "2024-04-01",
+          "value": 77688050
+        },
+        {
+          "month": "2024-05-01",
+          "value": 83075521
+        },
+        {
+          "month": "2024-06-01",
+          "value": 87455076
+        },
+        {
+          "month": "2024-07-01",
+          "value": 84123636
+        },
+        {
+          "month": "2024-08-01",
+          "value": 85912725
+        },
+        {
+          "month": "2024-09-01",
+          "value": 87091893
+        },
+        {
+          "month": "2024-10-01",
+          "value": 86428174
+        },
+        {
+          "month": "2024-11-01",
+          "value": 74535105
+        },
+        {
+          "month": "2024-12-01",
+          "value": 80423570
+        },
+        {
+          "month": "2025-01-01",
+          "value": 105813678
+        },
+        {
+          "month": "2025-02-01",
+          "value": 104229516
+        },
+        {
+          "month": "2025-03-01",
+          "value": 114786228
+        },
+        {
+          "month": "2025-04-01",
+          "value": 105635539
+        },
+        {
+          "month": "2025-05-01",
+          "value": 113720192
+        },
+        {
+          "month": "2025-06-01",
+          "value": 109083795
+        },
+        {
+          "month": "2025-07-01",
+          "value": 119396760
+        },
+        {
+          "month": "2025-08-01",
+          "value": 115274840
+        },
+        {
+          "month": "2025-09-01",
+          "value": 108002783
+        },
+        {
+          "month": "2025-10-01",
+          "value": 0
+        },
+        {
+          "month": "2025-11-01",
+          "value": 0
+        },
+        {
+          "month": "2025-12-01",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "category": "einzelangebot",
+      "series": [
+        {
+          "month": "2021-11-01",
+          "value": 64164652
+        },
+        {
+          "month": "2021-12-01",
+          "value": 65870786
+        },
+        {
+          "month": "2022-01-01",
+          "value": 64510038
+        },
+        {
+          "month": "2022-02-01",
+          "value": 60396756
+        },
+        {
+          "month": "2022-03-01",
+          "value": 61852708
+        },
+        {
+          "month": "2022-04-01",
+          "value": 57818940
+        },
+        {
+          "month": "2022-05-01",
+          "value": 61335626
+        },
+        {
+          "month": "2022-06-01",
+          "value": 59466189
+        },
+        {
+          "month": "2022-07-01",
+          "value": 59151027
+        },
+        {
+          "month": "2022-08-01",
+          "value": 62072547
+        },
+        {
+          "month": "2022-09-01",
+          "value": 60113397
+        },
+        {
+          "month": "2022-10-01",
+          "value": 64252987
+        },
+        {
+          "month": "2022-11-01",
+          "value": 62942343
+        },
+        {
+          "month": "2022-12-01",
+          "value": 62830589
+        },
+        {
+          "month": "2023-01-01",
+          "value": 63727239
+        },
+        {
+          "month": "2023-02-01",
+          "value": 60437013
+        },
+        {
+          "month": "2023-03-01",
+          "value": 62165975
+        },
+        {
+          "month": "2023-04-01",
+          "value": 60562980
+        },
+        {
+          "month": "2023-05-01",
+          "value": 60312518
+        },
+        {
+          "month": "2023-06-01",
+          "value": 60478807
+        },
+        {
+          "month": "2023-07-01",
+          "value": 64424625
+        },
+        {
+          "month": "2023-08-01",
+          "value": 62579659
+        },
+        {
+          "month": "2023-09-01",
+          "value": 53970828
+        },
+        {
+          "month": "2023-10-01",
+          "value": 56042260
+        },
+        {
+          "month": "2023-11-01",
+          "value": 56679635
+        },
+        {
+          "month": "2023-12-01",
+          "value": 52371761
+        },
+        {
+          "month": "2024-01-01",
+          "value": 44388414
+        },
+        {
+          "month": "2024-02-01",
+          "value": 44585222
+        },
+        {
+          "month": "2024-03-01",
+          "value": 45235352
+        },
+        {
+          "month": "2024-04-01",
+          "value": 43456032
+        },
+        {
+          "month": "2024-05-01",
+          "value": 46901454
+        },
+        {
+          "month": "2024-06-01",
+          "value": 49202792
+        },
+        {
+          "month": "2024-07-01",
+          "value": 47832783
+        },
+        {
+          "month": "2024-08-01",
+          "value": 48717027
+        },
+        {
+          "month": "2024-09-01",
+          "value": 49484965
+        },
+        {
+          "month": "2024-10-01",
+          "value": 48748208
+        },
+        {
+          "month": "2024-11-01",
+          "value": 42421059
+        },
+        {
+          "month": "2024-12-01",
+          "value": 45533952
+        },
+        {
+          "month": "2025-01-01",
+          "value": 59468870
+        },
+        {
+          "month": "2025-02-01",
+          "value": 57818658
+        },
+        {
+          "month": "2025-03-01",
+          "value": 63874009
+        },
+        {
+          "month": "2025-04-01",
+          "value": 59919276
+        },
+        {
+          "month": "2025-05-01",
+          "value": 65210489
+        },
+        {
+          "month": "2025-06-01",
+          "value": 62533361
+        },
+        {
+          "month": "2025-07-01",
+          "value": 67151449
+        },
+        {
+          "month": "2025-08-01",
+          "value": 63109011
+        },
+        {
+          "month": "2025-09-01",
+          "value": 59361557
+        },
+        {
+          "month": "2025-10-01",
+          "value": 0
+        },
+        {
+          "month": "2025-11-01",
+          "value": 0
+        },
+        {
+          "month": "2025-12-01",
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "top_latest": [
+    {
+      "name": "ausschreibung.at - Ausschreibungen f\u00fcr die Bauwirtschaft",
+      "category": "einzelangebot",
+      "type": "service",
+      "unique_users": 0,
+      "net_reach": "0",
+      "impressions": 122303
+    },
+    {
+      "name": "vienna.at - VIENNA ONLINE",
+      "category": "einzelangebot",
+      "type": "service",
+      "unique_users": 0,
+      "net_reach": "0",
+      "impressions": 3304792
+    },
+    {
+      "name": "vol.at - VORARLBERG ONLINE",
+      "category": "einzelangebot",
+      "type": "service",
+      "unique_users": 0,
+      "net_reach": "0",
+      "impressions": 35571541
+    },
+    {
+      "name": "bdb.at - BAUDATENBANK.AT - Partner der Bauwirtschaft",
+      "category": "einzelangebot",
+      "type": "service",
+      "unique_users": 0,
+      "net_reach": "0",
+      "impressions": 17014
+    },
+    {
+      "name": "derstandard.at - derStandard.at",
+      "category": "einzelangebot",
+      "type": "service",
+      "unique_users": 0,
+      "net_reach": "0",
+      "impressions": 98204288
+    },
+    {
+      "name": "elektro.at ",
+      "category": "einzelangebot",
+      "type": "service",
+      "unique_users": 0,
+      "net_reach": "0",
+      "impressions": 33579
+    },
+    {
+      "name": "falter.at ",
+      "category": "einzelangebot",
+      "type": "service",
+      "unique_users": 0,
+      "net_reach": "0",
+      "impressions": 2888292
+    },
+    {
+      "name": "fondsprofessionell.at - FONDS professionell",
+      "category": "einzelangebot",
+      "type": "service",
+      "unique_users": 0,
+      "net_reach": "0",
+      "impressions": 343245
+    },
+    {
+      "name": "gmx.at - GMX.at",
+      "category": "einzelangebot",
+      "type": "service",
+      "unique_users": 0,
+      "net_reach": "0",
+      "impressions": 481555850
+    },
+    {
+      "name": "gmx.net - GMX.at",
+      "category": "einzelangebot",
+      "type": "service",
+      "unique_users": 0,
+      "net_reach": "0",
+      "impressions": 126794770
+    }
+  ],
+  "scatter_latest": [
+    {
+      "name": "ausschreibung.at - Ausschreibungen f\u00fcr die Bauwirtschaft",
+      "category": "einzelangebot",
+      "usetime_seconds": 260,
+      "impressions_per_visits": 4.45,
+      "unique_users": 0
+    },
+    {
+      "name": "vienna.at - VIENNA ONLINE",
+      "category": "einzelangebot",
+      "usetime_seconds": 135,
+      "impressions_per_visits": 1.76,
+      "unique_users": 0
+    },
+    {
+      "name": "vol.at - VORARLBERG ONLINE",
+      "category": "einzelangebot",
+      "usetime_seconds": 296,
+      "impressions_per_visits": 2.9,
+      "unique_users": 0
+    },
+    {
+      "name": "bdb.at - BAUDATENBANK.AT - Partner der Bauwirtschaft",
+      "category": "einzelangebot",
+      "usetime_seconds": 136,
+      "impressions_per_visits": 1.62,
+      "unique_users": 0
+    },
+    {
+      "name": "derstandard.at - derStandard.at",
+      "category": "einzelangebot",
+      "usetime_seconds": 411,
+      "impressions_per_visits": 3.3,
+      "unique_users": 0
+    },
+    {
+      "name": "elektro.at ",
+      "category": "einzelangebot",
+      "usetime_seconds": 127,
+      "impressions_per_visits": 1.6,
+      "unique_users": 0
+    },
+    {
+      "name": "falter.at ",
+      "category": "einzelangebot",
+      "usetime_seconds": 202,
+      "impressions_per_visits": 1.93,
+      "unique_users": 0
+    },
+    {
+      "name": "fondsprofessionell.at - FONDS professionell",
+      "category": "einzelangebot",
+      "usetime_seconds": 174,
+      "impressions_per_visits": 2.89,
+      "unique_users": 0
+    },
+    {
+      "name": "gmx.at - GMX.at",
+      "category": "einzelangebot",
+      "usetime_seconds": 412,
+      "impressions_per_visits": 5.37,
+      "unique_users": 0
+    },
+    {
+      "name": "gmx.net - GMX.at",
+      "category": "einzelangebot",
+      "usetime_seconds": 412,
+      "impressions_per_visits": 10.76,
+      "unique_users": 0
+    },
+    {
+      "name": "heute.at",
+      "category": "einzelangebot",
+      "usetime_seconds": 258,
+      "impressions_per_visits": 3.48,
+      "unique_users": 0
+    },
+    {
+      "name": "industriemagazin.at - Das \u00f6sterreichische Industriemagazin",
+      "category": "einzelangebot",
+      "usetime_seconds": 108,
+      "impressions_per_visits": 1.45,
+      "unique_users": 0
+    },
+    {
+      "name": "kosmo.at",
+      "category": "einzelangebot",
+      "usetime_seconds": 86,
+      "impressions_per_visits": 1.22,
+      "unique_users": 0
+    },
+    {
+      "name": "kronehit.at",
+      "category": "einzelangebot",
+      "usetime_seconds": 220,
+      "impressions_per_visits": 2.73,
+      "unique_users": 0
+    },
+    {
+      "name": "netdoktor.at",
+      "category": "einzelangebot",
+      "usetime_seconds": 120,
+      "impressions_per_visits": 1.64,
+      "unique_users": 0
+    },
+    {
+      "name": "autorevue.at",
+      "category": "einzelangebot",
+      "usetime_seconds": 67,
+      "impressions_per_visits": 1.47,
+      "unique_users": 0
+    },
+    {
+      "name": "gusto.at",
+      "category": "einzelangebot",
+      "usetime_seconds": 186,
+      "impressions_per_visits": 1.64,
+      "unique_users": 0
+    },
+    {
+      "name": "news.at",
+      "category": "einzelangebot",
+      "usetime_seconds": 207,
+      "impressions_per_visits": 11.37,
+      "unique_users": 0
+    },
+    {
+      "name": "trend.at",
+      "category": "einzelangebot",
+      "usetime_seconds": 137,
+      "impressions_per_visits": 2.01,
+      "unique_users": 0
+    },
+    {
+      "name": "tv-media.at",
+      "category": "einzelangebot",
+      "usetime_seconds": 169,
+      "impressions_per_visits": 3.72,
+      "unique_users": 0
+    },
+    {
+      "name": "woman.at ",
+      "category": "einzelangebot",
+      "usetime_seconds": 117,
+      "impressions_per_visits": 1.94,
+      "unique_users": 0
+    },
+    {
+      "name": "noen.at - N\u00d6N",
+      "category": "einzelangebot",
+      "usetime_seconds": 161,
+      "impressions_per_visits": 4.64,
+      "unique_users": 0
+    },
+    {
+      "name": "oe24.at",
+      "category": "einzelangebot",
+      "usetime_seconds": 174,
+      "impressions_per_visits": 4.28,
+      "unique_users": 0
+    },
+    {
+      "name": "wetter.at",
+      "category": "einzelangebot",
+      "usetime_seconds": 116,
+      "impressions_per_visits": 4.65,
+      "unique_users": 0
+    },
+    {
+      "name": "nachrichten.at - Nachrichten.at",
+      "category": "einzelangebot",
+      "usetime_seconds": 215,
+      "impressions_per_visits": 3.0,
+      "unique_users": 0
+    },
+    {
+      "name": "orf.at",
+      "category": "einzelangebot",
+      "usetime_seconds": 353,
+      "impressions_per_visits": 4.89,
+      "unique_users": 0
+    },
+    {
+      "name": "salzburg24.at",
+      "category": "einzelangebot",
+      "usetime_seconds": 200,
+      "impressions_per_visits": 3.3,
+      "unique_users": 0
+    },
+    {
+      "name": "sn.at - Salzburger Nachrichten",
+      "category": "einzelangebot",
+      "usetime_seconds": 187,
+      "impressions_per_visits": 2.93,
+      "unique_users": 0
+    },
+    {
+      "name": "diepresse.com",
+      "category": "einzelangebot",
+      "usetime_seconds": 228,
+      "impressions_per_visits": 2.64,
+      "unique_users": 0
+    },
+    {
+      "name": "kleinezeitung.at",
+      "category": "einzelangebot",
+      "usetime_seconds": 280,
+      "impressions_per_visits": 5.36,
+      "unique_users": 0
+    }
+  ],
+  "missing_months": [
+    "2021-11-01",
+    "2022-01-01",
+    "2022-02-01",
+    "2022-03-01",
+    "2022-05-01",
+    "2022-06-01",
+    "2022-07-01",
+    "2022-08-01",
+    "2022-09-01",
+    "2023-02-01",
+    "2023-03-01",
+    "2023-05-01",
+    "2023-09-01",
+    "2023-10-01",
+    "2023-11-01",
+    "2023-12-01",
+    "2024-01-01",
+    "2024-02-01",
+    "2024-03-01",
+    "2024-04-01",
+    "2024-05-01",
+    "2024-06-01",
+    "2024-07-01",
+    "2024-08-01",
+    "2024-09-01",
+    "2024-10-01",
+    "2024-11-01",
+    "2024-12-01",
+    "2025-01-01",
+    "2025-07-01",
+    "2025-08-01",
+    "2025-09-01",
+    "2025-10-01"
+  ],
+  "missing_by_category": [
+    {
+      "category": "adnetwork",
+      "series": [
+        {
+          "month": "2021-11-01",
+          "value": 0
+        },
+        {
+          "month": "2022-01-01",
+          "value": 0
+        },
+        {
+          "month": "2022-02-01",
+          "value": 0
+        },
+        {
+          "month": "2022-03-01",
+          "value": 0
+        },
+        {
+          "month": "2022-05-01",
+          "value": 1
+        },
+        {
+          "month": "2022-06-01",
+          "value": 1
+        },
+        {
+          "month": "2022-07-01",
+          "value": 0
+        },
+        {
+          "month": "2022-08-01",
+          "value": 0
+        },
+        {
+          "month": "2022-09-01",
+          "value": 0
+        },
+        {
+          "month": "2023-02-01",
+          "value": 1
+        },
+        {
+          "month": "2023-03-01",
+          "value": 0
+        },
+        {
+          "month": "2023-05-01",
+          "value": 0
+        },
+        {
+          "month": "2023-09-01",
+          "value": 0
+        },
+        {
+          "month": "2023-10-01",
+          "value": 1
+        },
+        {
+          "month": "2023-11-01",
+          "value": 5
+        },
+        {
+          "month": "2023-12-01",
+          "value": 5
+        },
+        {
+          "month": "2024-01-01",
+          "value": 7
+        },
+        {
+          "month": "2024-02-01",
+          "value": 7
+        },
+        {
+          "month": "2024-03-01",
+          "value": 1
+        },
+        {
+          "month": "2024-04-01",
+          "value": 0
+        },
+        {
+          "month": "2024-05-01",
+          "value": 0
+        },
+        {
+          "month": "2024-06-01",
+          "value": 0
+        },
+        {
+          "month": "2024-07-01",
+          "value": 1
+        },
+        {
+          "month": "2024-08-01",
+          "value": 0
+        },
+        {
+          "month": "2024-09-01",
+          "value": 0
+        },
+        {
+          "month": "2024-10-01",
+          "value": 0
+        },
+        {
+          "month": "2024-11-01",
+          "value": 0
+        },
+        {
+          "month": "2024-12-01",
+          "value": 0
+        },
+        {
+          "month": "2025-01-01",
+          "value": 2
+        },
+        {
+          "month": "2025-07-01",
+          "value": 0
+        },
+        {
+          "month": "2025-08-01",
+          "value": 1
+        },
+        {
+          "month": "2025-09-01",
+          "value": 2
+        },
+        {
+          "month": "2025-10-01",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "category": "dach-marken",
+      "series": [
+        {
+          "month": "2021-11-01",
+          "value": 1
+        },
+        {
+          "month": "2022-01-01",
+          "value": 1
+        },
+        {
+          "month": "2022-02-01",
+          "value": 1
+        },
+        {
+          "month": "2022-03-01",
+          "value": 1
+        },
+        {
+          "month": "2022-05-01",
+          "value": 0
+        },
+        {
+          "month": "2022-06-01",
+          "value": 0
+        },
+        {
+          "month": "2022-07-01",
+          "value": 3
+        },
+        {
+          "month": "2022-08-01",
+          "value": 6
+        },
+        {
+          "month": "2022-09-01",
+          "value": 1
+        },
+        {
+          "month": "2023-02-01",
+          "value": 0
+        },
+        {
+          "month": "2023-03-01",
+          "value": 0
+        },
+        {
+          "month": "2023-05-01",
+          "value": 1
+        },
+        {
+          "month": "2023-09-01",
+          "value": 14
+        },
+        {
+          "month": "2023-10-01",
+          "value": 5
+        },
+        {
+          "month": "2023-11-01",
+          "value": 6
+        },
+        {
+          "month": "2023-12-01",
+          "value": 5
+        },
+        {
+          "month": "2024-01-01",
+          "value": 21
+        },
+        {
+          "month": "2024-02-01",
+          "value": 7
+        },
+        {
+          "month": "2024-03-01",
+          "value": 9
+        },
+        {
+          "month": "2024-04-01",
+          "value": 9
+        },
+        {
+          "month": "2024-05-01",
+          "value": 5
+        },
+        {
+          "month": "2024-06-01",
+          "value": 3
+        },
+        {
+          "month": "2024-07-01",
+          "value": 4
+        },
+        {
+          "month": "2024-08-01",
+          "value": 3
+        },
+        {
+          "month": "2024-09-01",
+          "value": 3
+        },
+        {
+          "month": "2024-10-01",
+          "value": 2
+        },
+        {
+          "month": "2024-11-01",
+          "value": 5
+        },
+        {
+          "month": "2024-12-01",
+          "value": 2
+        },
+        {
+          "month": "2025-01-01",
+          "value": 2
+        },
+        {
+          "month": "2025-07-01",
+          "value": 0
+        },
+        {
+          "month": "2025-08-01",
+          "value": 0
+        },
+        {
+          "month": "2025-09-01",
+          "value": 0
+        },
+        {
+          "month": "2025-10-01",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "category": "einzelangebot",
+      "series": [
+        {
+          "month": "2021-11-01",
+          "value": 1
+        },
+        {
+          "month": "2022-01-01",
+          "value": 2
+        },
+        {
+          "month": "2022-02-01",
+          "value": 2
+        },
+        {
+          "month": "2022-03-01",
+          "value": 1
+        },
+        {
+          "month": "2022-05-01",
+          "value": 1
+        },
+        {
+          "month": "2022-06-01",
+          "value": 1
+        },
+        {
+          "month": "2022-07-01",
+          "value": 2
+        },
+        {
+          "month": "2022-08-01",
+          "value": 4
+        },
+        {
+          "month": "2022-09-01",
+          "value": 1
+        },
+        {
+          "month": "2023-02-01",
+          "value": 2
+        },
+        {
+          "month": "2023-03-01",
+          "value": 1
+        },
+        {
+          "month": "2023-05-01",
+          "value": 1
+        },
+        {
+          "month": "2023-09-01",
+          "value": 13
+        },
+        {
+          "month": "2023-10-01",
+          "value": 4
+        },
+        {
+          "month": "2023-11-01",
+          "value": 6
+        },
+        {
+          "month": "2023-12-01",
+          "value": 5
+        },
+        {
+          "month": "2024-01-01",
+          "value": 21
+        },
+        {
+          "month": "2024-02-01",
+          "value": 10
+        },
+        {
+          "month": "2024-03-01",
+          "value": 9
+        },
+        {
+          "month": "2024-04-01",
+          "value": 9
+        },
+        {
+          "month": "2024-05-01",
+          "value": 4
+        },
+        {
+          "month": "2024-06-01",
+          "value": 3
+        },
+        {
+          "month": "2024-07-01",
+          "value": 3
+        },
+        {
+          "month": "2024-08-01",
+          "value": 3
+        },
+        {
+          "month": "2024-09-01",
+          "value": 4
+        },
+        {
+          "month": "2024-10-01",
+          "value": 2
+        },
+        {
+          "month": "2024-11-01",
+          "value": 4
+        },
+        {
+          "month": "2024-12-01",
+          "value": 2
+        },
+        {
+          "month": "2025-01-01",
+          "value": 2
+        },
+        {
+          "month": "2025-07-01",
+          "value": 1
+        },
+        {
+          "month": "2025-08-01",
+          "value": 2
+        },
+        {
+          "month": "2025-09-01",
+          "value": 2
+        },
+        {
+          "month": "2025-10-01",
+          "value": 2
+        }
+      ]
+    }
+  ]
+}
