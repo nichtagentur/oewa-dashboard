@@ -28,6 +28,7 @@
                   radial-gradient(900px 500px at 110% 10%, #ffe9c9 0%, transparent 55%),
                   linear-gradient(180deg, var(--bg-1), var(--bg-2));
       min-height: 100vh;
+      animation: fadeIn 0.8s ease;
     }
 
     .wrap {
@@ -41,6 +42,7 @@
       grid-template-columns: 1fr;
       gap: 12px;
       margin-bottom: 24px;
+      animation: slideDown 0.8s ease;
     }
 
     h1 {
@@ -67,7 +69,17 @@
       border-radius: 14px;
       padding: 16px 18px;
       box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+      transform: translateY(12px);
+      opacity: 0;
+      animation: riseIn 0.8s ease forwards;
     }
+
+    .card:nth-of-type(1) { animation-delay: 0.05s; }
+    .card:nth-of-type(2) { animation-delay: 0.10s; }
+    .card:nth-of-type(3) { animation-delay: 0.15s; }
+    .card:nth-of-type(4) { animation-delay: 0.20s; }
+    .card:nth-of-type(5) { animation-delay: 0.25s; }
+    .card:nth-of-type(6) { animation-delay: 0.30s; }
 
     .kpi-label {
       color: var(--muted);
@@ -99,6 +111,76 @@
       height: 260px;
     }
 
+    .chart .draw {
+      stroke-dasharray: 1200;
+      stroke-dashoffset: 1200;
+      animation: drawLine 1.4s ease forwards;
+    }
+
+    .chart .pop {
+      transform-origin: center;
+      animation: popIn 0.6s ease forwards;
+    }
+
+    .chart .bar {
+      transform-origin: bottom;
+      animation: growBar 0.8s ease forwards;
+    }
+
+    .chart circle,
+    .chart rect {
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    .chart circle:hover,
+    .chart rect:hover {
+      transform: scale(1.15);
+      opacity: 1;
+    }
+
+    .list li {
+      animation: fadeIn 0.6s ease forwards;
+    }
+
+    .list li:nth-child(1) { animation-delay: 0.10s; }
+    .list li:nth-child(2) { animation-delay: 0.14s; }
+    .list li:nth-child(3) { animation-delay: 0.18s; }
+    .list li:nth-child(4) { animation-delay: 0.22s; }
+    .list li:nth-child(5) { animation-delay: 0.26s; }
+    .list li:nth-child(6) { animation-delay: 0.30s; }
+    .list li:nth-child(7) { animation-delay: 0.34s; }
+    .list li:nth-child(8) { animation-delay: 0.38s; }
+    .list li:nth-child(9) { animation-delay: 0.42s; }
+    .list li:nth-child(10) { animation-delay: 0.46s; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes riseIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes drawLine {
+      to { stroke-dashoffset: 0; }
+    }
+
+    @keyframes popIn {
+      from { transform: scale(0.6); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes growBar {
+      from { transform: scaleY(0.2); opacity: 0; }
+      to { transform: scaleY(1); opacity: 1; }
+    }
+
     .list {
       margin: 0;
       padding: 0;
@@ -113,6 +195,7 @@
       gap: 12px;
       padding: 6px 0;
       border-bottom: 1px dashed var(--stroke);
+      opacity: 0;
     }
 
     .pill {
@@ -1716,10 +1799,10 @@
       const points = cat.series.map((s, i) => {
         const x = pad + (i / (cat.series.length - 1)) * (w - pad * 2);
         const y = h - pad - (s.value / maxY) * (h - pad * 2);
-        pointsMarkup += `<circle cx="${x}" cy="${y}" r="4" fill="${color}" data-tip="${cat.category} • ${s.month} • ${formatNumber(s.value)} impressions" />`;
+        pointsMarkup += `<circle class="pop" cx="${x}" cy="${y}" r="4" fill="${color}" data-tip="${cat.category} • ${s.month} • ${formatNumber(s.value)} impressions" />`;
         return `${x},${y}`;
       }).join(" ");
-      paths += `<polyline fill="none" stroke="${color}" stroke-width="2.5" points="${points}" />`;
+      paths += `<polyline class="draw" fill="none" stroke="${color}" stroke-width="2.5" points="${points}" />`;
       legend += `<span><i class="dot" style="background:${color}"></i>${cat.category}</span>`;
     });
 
@@ -1764,7 +1847,7 @@
       const size = 4 + (d.impressions / xs.length) % 6;
       const color = colors[i % colors.length];
       const tip = `${d.name} • ${d.category} • ${d.impressions_per_visits.toFixed(2)} pages/visit • ${d.usetime_seconds}s`;
-      return `<circle cx="${x}" cy="${y}" r="${size}" fill="${color}" opacity="0.8" data-tip="${tip}"></circle>`;
+      return `<circle class="pop" cx="${x}" cy="${y}" r="${size}" fill="${color}" opacity="0.8" data-tip="${tip}"></circle>`;
     }).join("");
 
     const axes = `
@@ -1798,7 +1881,7 @@
         const y = h - pad - height;
         const width = (barWidth / cats.length) - 2;
         const tip = `${cat.category} • ${s.month} • ${s.value} missing`;
-        bars += `<rect x="${x}" y="${y}" width="${width}" height="${height}" fill="${color}" opacity="0.75" data-tip="${tip}"></rect>`;
+        bars += `<rect class="bar" x="${x}" y="${y}" width="${width}" height="${height}" fill="${color}" opacity="0.75" data-tip="${tip}"></rect>`;
       });
     });
 
