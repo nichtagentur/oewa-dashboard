@@ -198,6 +198,44 @@
       opacity: 0;
     }
 
+    .toggle {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--stroke);
+      background: #f8fafc;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .toggle::after {
+      content: "▾";
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .toggle[aria-expanded="true"]::after {
+      transform: rotate(180deg);
+    }
+
+    .desc {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+      margin-top: 0;
+    }
+
+    .desc.open {
+      max-height: 600px;
+      opacity: 1;
+      margin-top: 12px;
+    }
+
     .pill {
       font-size: 11px;
       padding: 2px 8px;
@@ -265,25 +303,28 @@
     </header>
 
     <section class="card" style="margin-bottom: 18px;">
-      <div class="section-title">What this data is</div>
-      <div class="subtitle" style="margin-top: 6px;">
-        OEWA (Austrian Web Analysis) publishes audience measurement for websites and digital networks.
-        Each row is one brand (or network) in one month.
-        The data covers November 2021 to December 2025.
-      </div>
-      <div class="subtitle" style="margin-top: 10px;">
-        Key columns:
-        <strong>visits</strong> = number of visits,
-        <strong>impressions</strong> = page views,
-        <strong>usetime_seconds</strong> = average time spent,
-        <strong>impressions_per_visits</strong> = pages per visit,
-        <strong>net_reach</strong> = reach in percent.
-      </div>
-      <div class="subtitle" style="margin-top: 10px;">
-        Categories:
-        <strong>einzelangebot</strong> = single website,
-        <strong>dach-marken</strong> = brand umbrella / media house,
-        <strong>adnetwork</strong> = ad network group.
+      <button class="toggle" id="desc-toggle" aria-expanded="false">Show data description</button>
+      <div class="desc" id="desc-panel">
+        <div class="section-title">What this data is</div>
+        <div class="subtitle" style="margin-top: 6px;">
+          OEWA (Austrian Web Analysis) publishes audience measurement for websites and digital networks.
+          Each row is one brand (or network) in one month.
+          The data covers November 2021 to December 2025.
+        </div>
+        <div class="subtitle" style="margin-top: 10px;">
+          Key columns:
+          <strong>visits</strong> = number of visits,
+          <strong>impressions</strong> = page views,
+          <strong>usetime_seconds</strong> = average time spent,
+          <strong>impressions_per_visits</strong> = pages per visit,
+          <strong>net_reach</strong> = reach in percent.
+        </div>
+        <div class="subtitle" style="margin-top: 10px;">
+          Categories:
+          <strong>einzelangebot</strong> = single website,
+          <strong>dach-marken</strong> = brand umbrella / media house,
+          <strong>adnetwork</strong> = ad network group.
+        </div>
       </div>
     </section>
 
@@ -1908,6 +1949,14 @@
   renderTopList();
   renderScatter();
   renderMissing();
+
+  const toggle = document.getElementById("desc-toggle");
+  const panel = document.getElementById("desc-panel");
+  toggle.addEventListener("click", () => {
+    const isOpen = panel.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    toggle.textContent = isOpen ? "Hide data description" : "Show data description";
+  });
   </script>
 </body>
 </html>
