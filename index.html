@@ -152,6 +152,22 @@
       color: var(--muted);
     }
 
+    .tooltip {
+      position: fixed;
+      pointer-events: none;
+      background: #111827;
+      color: #f9fafb;
+      font-size: 12px;
+      padding: 6px 8px;
+      border-radius: 8px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+      opacity: 0;
+      transform: translate(-50%, -110%);
+      transition: opacity 0.12s ease;
+      z-index: 9999;
+      white-space: nowrap;
+    }
+
     @media (max-width: 640px) {
       h1 { font-size: 28px; }
       .chart { height: 220px; }
@@ -222,6 +238,8 @@
 
     <div class="footer-note">Data source: OEWA exports (2021-11 to 2025-12)</div>
   </div>
+
+  <div class="tooltip" id="tooltip"></div>
 
   <script>
   const data = {
@@ -1640,12 +1658,24 @@
 };
 
   const colors = ["#0f766e", "#0c4a6e", "#a16207", "#a21caf", "#15803d"];
+  const tooltip = document.getElementById("tooltip");
 
   function formatNumber(value) {
     if (value === null || value === undefined) return "-";
     if (value >= 1_000_000) return (value / 1_000_000).toFixed(1) + "M";
     if (value >= 1_000) return (value / 1_000).toFixed(1) + "k";
     return value.toString();
+  }
+
+  function showTip(text, x, y) {
+    tooltip.textContent = text;
+    tooltip.style.left = x + "px";
+    tooltip.style.top = y + "px";
+    tooltip.style.opacity = "1";
+  }
+
+  function hideTip() {
+    tooltip.style.opacity = "0";
   }
 
   function renderKpis() {
@@ -1680,12 +1710,14 @@
 
     let paths = "";
     let legend = "";
+    let pointsMarkup = "";
 
     data.category_series.forEach((cat, idx) => {
       const color = colors[idx % colors.length];
       const points = cat.series.map((s, i) => {
         const x = pad + (i / (cat.series.length - 1)) * (w - pad * 2);
         const y = h - pad - (s.value / maxY) * (h - pad * 2);
+        pointsMarkup += `<circle cx="${x}" cy="${y}" r="4" fill="${color}" data-tip="${cat.category} • ${s.month} • ${formatNumber(s.value)} unique users" />`;
         return `${x},${y}`;
       }).join(" ");
       paths += `<polyline fill="none" stroke="${color}" stroke-width="2.5" points="${points}" />`;
@@ -1697,8 +1729,13 @@
       <line x1="${pad}" y1="${h - pad}" x2="${w - pad}" y2="${h - pad}" stroke="#cbd5e1" />
     `;
 
-    svg.innerHTML = axes + paths;
+    svg.innerHTML = axes + paths + pointsMarkup;
     document.getElementById("legend-category").innerHTML = legend;
+
+    svg.querySelectorAll("circle").forEach(c => {
+      c.addEventListener("mousemove", (e) => showTip(c.dataset.tip, e.clientX, e.clientY));
+      c.addEventListener("mouseleave", hideTip);
+    });
   }
 
   function renderTopList() {
@@ -1727,7 +1764,8 @@
       const y = h - pad - (d.usetime_seconds / maxY) * (h - pad * 2);
       const size = 4 + (d.unique_users / xs.length) % 6;
       const color = colors[i % colors.length];
-      return `<circle cx="${x}" cy="${y}" r="${size}" fill="${color}" opacity="0.8"></circle>`;
+      const tip = `${d.name} • ${d.category} • ${d.impressions_per_visits.toFixed(2)} pages/visit • ${d.usetime_seconds}s`;
+      return `<circle cx="${x}" cy="${y}" r="${size}" fill="${color}" opacity="0.8" data-tip="${tip}"></circle>`;
     }).join("");
 
     const axes = `
@@ -1736,6 +1774,11 @@
     `;
 
     svg.innerHTML = axes + dots;
+
+    svg.querySelectorAll("circle").forEach(c => {
+      c.addEventListener("mousemove", (e) => showTip(c.dataset.tip, e.clientX, e.clientY));
+      c.addEventListener("mouseleave", hideTip);
+    });
   }
 
   function renderMissing() {
@@ -1755,7 +1798,8 @@
         const height = (s.value / maxY) * (h - pad * 2);
         const y = h - pad - height;
         const width = (barWidth / cats.length) - 2;
-        bars += `<rect x="${x}" y="${y}" width="${width}" height="${height}" fill="${color}" opacity="0.75"></rect>`;
+        const tip = `${cat.category} • ${s.month} • ${s.value} missing`;
+        bars += `<rect x="${x}" y="${y}" width="${width}" height="${height}" fill="${color}" opacity="0.75" data-tip="${tip}"></rect>`;
       });
     });
 
@@ -1770,6 +1814,11 @@
       <span><i class="dot" style="background:${colors[idx % colors.length]}"></i>${cat.category}</span>
     `).join("");
     document.getElementById("legend-missing").innerHTML = legend;
+
+    svg.querySelectorAll("rect").forEach(r => {
+      r.addEventListener("mousemove", (e) => showTip(r.dataset.tip, e.clientX, e.clientY));
+      r.addEventListener("mouseleave", hideTip);
+    });
   }
 
   renderKpis();
