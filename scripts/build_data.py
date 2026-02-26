@@ -53,13 +53,13 @@ for r in read_semicolon(COMBINED):
 months = sorted(m for m in months if m)
 latest_month = months[-1] if months else None
 
-# Category totals by month (unique users)
+# Category totals by month (impressions)
 cat_month_totals = defaultdict(lambda: defaultdict(int))
 for r in rows:
-    if not r.get("month") or r.get("unique_users") is None:
+    if not r.get("month") or r.get("impressions") is None:
         continue
     cat = r.get("category")
-    cat_month_totals[cat][r["month"]] += r["unique_users"]
+    cat_month_totals[cat][r["month"]] += r["impressions"]
 
 category_series = []
 for cat, by_month in sorted(cat_month_totals.items()):
@@ -68,9 +68,9 @@ for cat, by_month in sorted(cat_month_totals.items()):
         series.append({"month": m, "value": by_month.get(m, 0)})
     category_series.append({"category": cat, "series": series})
 
-# Top 10 by unique users (latest month)
-latest_rows = [r for r in rows if r.get("month") == latest_month and r.get("unique_users") is not None]
-latest_rows.sort(key=lambda r: r["unique_users"], reverse=True)
+# Top 10 by impressions (latest month)
+latest_rows = [r for r in rows if r.get("month") == latest_month and r.get("impressions") is not None]
+latest_rows.sort(key=lambda r: r["impressions"], reverse=True)
 
 seen = set()
 unique_top = []
@@ -90,7 +90,7 @@ for r in latest_rows:
     if len(unique_top) >= 10:
         break
 
-# Engagement scatter for top 30 by unique users (latest month)
+# Engagement scatter for top 30 by impressions (latest month)
 scatter = []
 for r in latest_rows[:30]:
     if r.get("usetime_seconds") is None or r.get("impressions_per_visits") is None:
@@ -100,7 +100,7 @@ for r in latest_rows[:30]:
         "category": r.get("category"),
         "usetime_seconds": r.get("usetime_seconds"),
         "impressions_per_visits": r.get("impressions_per_visits"),
-        "unique_users": r.get("unique_users"),
+        "impressions": r.get("impressions"),
     })
 
 # Missing data heatmap counts by month and category
